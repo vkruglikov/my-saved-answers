@@ -1,0 +1,18 @@
+.filters {
+    display: flex;
+    gap: 10px;
+    flex-flow: wrap;
+}
+
+.filters__item {
+    padding: 5px 10px;
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.filters__item_active {
+    background: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
+}

@@ -1,0 +1,5 @@
+.list {
+    background: var(--tg-theme-bg-color);
+    padding: 10px;
+    border-radius: 12px;
+}

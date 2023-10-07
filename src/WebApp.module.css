@@ -1,0 +1,36 @@
+:root {
+    --tg-theme-bg-color: #fff;
+    --tg-theme-secondary-bg-color: #f3f2f9;
+    --tg-theme-text-color: #0a0a0a;
+    --tg-theme-hint-color: #929292;
+    --tg-theme-button-color: #5bc8fb;
+    --tg-theme-button-text-color: #fffeec;
+
+    --default-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+}
+
+body {
+    -webkit-user-select: none;
+    user-select: none;
+    margin: 0;
+    padding: 0 0 40px;
+    background: var(--tg-theme-secondary-bg-color);
+    color: var(--tg-theme-text-color);
+    font-family: var(--default-font);
+    font-size: 16px;
+}
+
+input, textarea, select {
+    font-family: var(--default-font);
+    font-size: 16px;
+}
+
+.wrapper {
+    padding-inline: 16px;
+    padding-block: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

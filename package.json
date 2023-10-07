@@ -1,0 +1,40 @@
+{
+  "name": "my-saved-answers",
+  "version": "1.0.0",
+  "description": "My saved Answers - MiniApp for Telegram contest 2023",
+  "author": "dev.n@bk.ru Valentin Kruglikov",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./dist && NODE_ENV=production webpack",
+    "dev": "concurrently \"npx webpack serve\" \"npm run server:dev\"",
+    "server": "node server/index.mjs",
+    "server:dev": "nodemon --delay 1s --watch server --watch answers.js --watch .env ./server/index.mjs"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@types/node-telegram-bot-api": "^0.61.8",
+    "@types/react": "^18.2.22",
+    "@types/react-dom": "^18.2.7",
+    "concurrently": "^8.2.1",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "nodemon": "^3.0.1",
+    "prettier": "3.0.3",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "@vkruglikov/react-telegram-web-app": "^2.1.4",
+    "copy-to-clipboard": "^3.3.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "node-telegram-bot-api": "^0.63.0"
+  }
+}

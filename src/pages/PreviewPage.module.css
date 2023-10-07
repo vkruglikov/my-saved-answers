@@ -1,0 +1,35 @@
+.formItemTitle {
+    color: var(--tg-theme-hint-color);
+    padding: 10px;
+    font-size: 15px;
+}
+
+.formItemMessage {
+    position: relative;
+    color: var(--tg-theme-text-color);
+    font-size: 14px;
+    line-height: 1.5em;
+    background: var(--tg-theme-bg-color);
+    padding: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+.formItemMessage__copy {
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    fill: var(--tg-theme-button-color);
+    display: flex;
+    padding: 6px 6px;
+}
+
+.formItemMessage__copy svg {
+    fill: var(--tg-theme-button-color);
+}
+
+.formItemMessage img {
+    width: 100%;
+    min-height: 100vw;
+}
