@@ -1,6 +1,6 @@
 # ⚡ "My saved answers" Telegram MiniApp 
 
-This repository contains a concept for a MiniApp within Telegram that allows users to send saved messages.
+This repository contains a concept for a MiniApp within Telegram that allows users to send saved answers.
 
 Participating in MiniApp Contest October 2023.
 
@@ -21,7 +21,7 @@ Participating in MiniApp Contest October 2023.
   - [3. Title and description](#3-title-and-description-of-saved-answer)
   - [4. Tag filters](#4-tag-filters)
   - [5. Add new answers](#5-add-new-answers)
-  - [6. MainButton "SEND"](#6-mainbutton-send)
+  - [6. MainButton "SEND"](#6-mainbutton--send)
   - [7. Inline query preview](#7-inline-query-preview)
   - [8. BackButton](#8-backbutton) 
 - [Overview of Inline mode](#-overview-of-inline-mode) 🤖
@@ -43,7 +43,7 @@ Participating in MiniApp Contest October 2023.
 - [License](#-license) 🥂
 
 ## 🌟 Motivation
-In many popular messengers and social media platforms, there is a feature to send saved messages. Currently, Telegram does not have this functionality.
+In many popular messengers and social media platforms, there is a feature to send saved answers. Currently, Telegram does not have this functionality.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;😊 **Business Communication**: In business, people use prepared responses for common queries, enabling quick replies in customer support.
 
@@ -71,8 +71,8 @@ The web application is hosted on GitHub Pages and can be accessed at [vkruglikov
 
 ## 📱 Overview of MiniApp
 
-With MiniApp, you can view saved messages and filter them by tags.\
-You can easily send these saved messages without leaving the conversation with the user.
+With MiniApp, you can view saved answers and filter them by tags.\
+You can easily send these saved answers without leaving the conversation with the user.
 
 
 <div style="display: flex; gap: 10px;">
@@ -101,7 +101,7 @@ When clicked, the app performs two actions:
 
 ### 4. Tag filters
 Here are the filter buttons for tags.\
-They speed up navigation through saved messages and allow grouping of messages.
+They speed up navigation through saved answers and allow grouping of messages.
 
 ### 5. Add new answers
 The "Add" button directs the user to the bot, where the functionality to add a new response can be implemented on the backend later.
@@ -149,7 +149,7 @@ I use [node-telegram-bot-api](https://www.npmjs.com/package/node-telegram-bot-ap
 
 ### 2. Inline Query Result
 
-The query result will display a list of saved messages available for sending, presented as [InlineQueryResult](https://core.telegram.org/bots/api#inlinequeryresult).
+The query result will display a list of saved answers available for sending, presented as [InlineQueryResult](https://core.telegram.org/bots/api#inlinequeryresult).
 
 Clicking on it will send the message to the chat.
 
@@ -171,7 +171,7 @@ In this project, we use mocked saved answers. These data are used both in MiniAp
 
 You can modify or add any messages, but they will remain static. The file [`answers.js`](./answers.js) is located in the project's root folder, and the descriptions of types are in [`answers.d.ts`](./answers.d.ts).
 
-To add functionality for adding/saving/deleting saved messages, the backend needs to be enhanced.
+To add functionality for adding/saving/deleting saved answers, the backend needs to be enhanced.
 
 [answers.js](./answers.js)\
 [answers.d.ts](./answers.d.ts)
@@ -206,7 +206,7 @@ WebApp.setHeaderColor('secondary_bg_color');
 WebApp.setBackgroundColor('secondary_bg_color');
 ```
 
-## ⚠️ Compatibility and Potential Errors
+## Compatibility and Potential Errors
 ⚠️ When working with the WebApp API and aiming to maintain backward compatibility with older clients, it is necessary to check the client's version. For example, a method like [isVersionAtLeast(version)](https://core.telegram.org/bots/webapps#initializing-mini-apps) could be used.\
 In this project, I am ignoring such checks and expecting that the client will have the latest version of the API at the time of writing, which is **Bot API 6.9**.
 
@@ -281,7 +281,7 @@ Project structure overview without going into details
 │   └── WebApp.module.css
 ├── server/
 │   └── index.mjs             # Server-side component in Node.js for the bot
-├── answers.js                # Mocked data of saved messages
+├── answers.js                # Mocked data of saved answers
 ├── answers.d.ts
 ├── webpack.config.js
 └── .env
