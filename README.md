@@ -60,14 +60,14 @@ In many popular messengers and social media platforms, there is a feature to sen
 The demo bot is available at [@savedanswers_bot](https://t.me/savedanswers_bot).
 
 To launch in `inline mode`, enter `@savedanswers_bot` in any chat dialogue.\
-[Overview of Inline mode](#overview-of-inline-mode)
+[Overview of Inline mode](#-overview-of-inline-mode)
 
 ⚠️ You can find information about errors that may occur while using the application by clicking on the link
 [Compatibility and Potential Errors](#compatibility-and-potential-errors)
 
 The web application is hosted on GitHub Pages and can be accessed at [vkruglikov.github.io/my-saved-answers](https://vkruglikov.github.io/my-saved-answers/)
 
-🎭 The app uses [Mocked Data](#mocked-data)
+🎭 The app uses [Mocked Data](#-mocked-data)
 
 ## 📱 Overview of MiniApp
 
@@ -106,7 +106,7 @@ They speed up navigation through saved answers and allow grouping of messages.
 ### 5. Add new answers
 The "Add" button directs the user to the bot, where the functionality to add a new response can be implemented on the backend later.
 
-Since this application operates entirely on [mocked data](#mocked-data), this feature has not been implemented yet.\
+Since this application operates entirely on [mocked data](#-mocked-data), this feature has not been implemented yet.\
 You will see a placeholder response from the bot.
 
 ### 6. MainButton "SEND"
